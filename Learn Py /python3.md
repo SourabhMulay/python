@@ -1,6 +1,6 @@
 # Python 
 
-## > Data Types
+> ## Data Types
 
 python has : int, float (both with no size restriction),string, tuple (both are immutable : once defined then cannot be changed), dictionary, Sets.
 tho some of are not considered as an data types but in real time we used them to resolve many mathematical problems.\
