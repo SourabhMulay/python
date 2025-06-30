@@ -1,4 +1,4 @@
-# Python 
+# Python 3 
 
 > ## Data Types
 
@@ -29,3 +29,6 @@ x=23.45
 #2345 * 10^-2 or 2345 E -2
 ```
 
+for boolean we have True and False as constants! beside mathematical use we aint we complex numbers.
+
+<hr>
