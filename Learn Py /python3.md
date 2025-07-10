@@ -32,3 +32,53 @@ x=23.45
 for boolean we have True and False as constants! beside mathematical use we aint we complex numbers.
 
 <hr>
+
+Literals!! Direct data written in the program or used in the program is called literals!! and if permantly set the value to that literals then it can be called as constants!!
+
+**Base Conversion Functions:**
+
+Python have some build in functions for base conversion!! bin(int) -> binary,
+oct(int) -> octal, hex(int) -> hexadecimal, int(str) -> decimal
+
+**Type conversion:**
+
+functions available: 
+1. int()
+2. float()
+3. bool()
+4. complex()
+5. str()
+
+**Loops:**
+
+"Else" in python can be used in many ways!!
+
+**With While loop:**
+
+```py
+while <condition>:
+  s1
+  s2
+else:
+  s3
+```
+
+So conditionally it get executed! tho i dont find any benifit using this! in many condition the while may stop without the condition getting false! so in such cases it will be useful!!
+
+**for loops:**
+
+range(start, stop, step) can be used with for loops to iterate over!! stop is not inclusive here! start is inclusive!
+
+**for in loop:**
+
+```py
+
+for item in sequence:
+  s1
+  s2
+```
+
+so it work as an iterator!!
+
+
+
