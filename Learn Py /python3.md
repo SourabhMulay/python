@@ -80,5 +80,9 @@ for item in sequence:
 
 so it work as an iterator!!
 
+<hr>
+
+#### Strings
+
 
 
