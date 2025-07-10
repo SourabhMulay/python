@@ -82,7 +82,39 @@ so it work as an iterator!!
 
 <hr>
 
-#### Strings
+### Strings
 
+we can access string with the positive indices as well as the negative indices (reverse).
+
+```py
+s='hello'
+l = len(s)
+```
+
+""" """ strings can be used to define multiline comments! python support double as well as single quotes!!
+
+String Slicing: 
+
+```py
+
+s='hello world'
+#strings are immutable so you can actually change any value here by dooing s[0]='l'
+```
+
+Slicing can help in such cases! 
+
+s[start:stop:steps] can be used to slice!!  it's same as range function!
+
+here as well the stop is not inclusive!
+
+```py
+s='hello'
+s[0:2:2]
+s[-1:-3]
+```
+
+so above example shows that we can use the -ve indices as well!!
+
+we can also we IN and NOT IN operators to check if string s present in string s1.
 
 
