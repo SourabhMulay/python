@@ -219,4 +219,36 @@ we can mentioned key as argument so w.r.t that it will sort the things out!!
 like if we have list of strings and we wanted to sort it by the length of strings then we mention `l.sort(key=len)`. 
 while sorting strings only with no key it will take the asicii values in consideration!!
 
+**list comprehentions**
 
+so suppose you have an iterable to be added in list so here list comprehensions will work smoothly!!
+
+```py
+L = [iterable]
+
+#comprehensions
+
+L = [expression for item in iterable]
+```
+
+for example:
+
+```py
+
+L = [x**2  for x in range(1,5)]
+
+L1 = [x.lower() for x in 'pytHON']
+```
+
+<hr>
+
+### Tuple
+
+The data type is immutable!! 
+
+```py
+t = (1,2,3,4,5,6)
+```
+ It can have duplicates and take any data type!!
+
+ 
