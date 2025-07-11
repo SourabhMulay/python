@@ -297,7 +297,6 @@ we can access tuple elements using indexing and as well as slicing works on tupl
 packing and unpacking also works here!! *can be used to unpack the multiple values for exaple:
 
 ```py
-
 t = 1,2,3,4,5
 
 # if you assign multiple values to one varible it will pack it and make a tuple so above expression work
