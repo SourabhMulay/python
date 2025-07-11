@@ -130,3 +130,21 @@ Methods:
 7. rjust(width, fillchar) : string align to right
 8. center(width,fillchar)
 9. zfill(width)
+10. lstrip(chars:optional) : striping the spaces if chars not mentioned (data cleaning purpose)
+11. rstrip(chars:optional)
+12. strip(chars)
+13. replace(oldstring, newstring, count)
+14. join(iterable) : join with seperator mentioned "ab".join('a') result "aaba"
+15. split(seperator,maxsplit)
+16. rsplit(seperator, maxsplit) 
+17. splitlines(keepends) : linewise split
+18. startswith(prefix,start,end)
+19. endswith(suffix,start,end)
+20. removeprefix(prefix)
+21. removesuffix(suffix)
+22. partition(seperator)
+23. rpartition(seperator)
+
+
+For an ASCII code `ord(char)`!! and to get character use `chr(number)`.
+
