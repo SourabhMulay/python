@@ -148,3 +148,25 @@ Methods:
 
 For an ASCII code `ord(char)`!! and to get character use `chr(number)`.
 
+<hr>
+
+### List
+
+List can store anything!! it is possible because the indices are referance! list is mutable!
+
+indexing and slicing is same as strings! L[start : end : steps].
+
+inserting anywhere is possible!! 
+
+````py
+
+L[0:0] = [10]
+
+#inserting 10 at 0th location and all othere elements will get shifted to right
+#you can insert more than one element
+
+L[3:3] = [10,12,12]
+````
+
+Giving range will modify/delete the existing elements!  append function can be used to push from back!!
+
