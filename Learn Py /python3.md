@@ -264,3 +264,46 @@ t4= (3,) #right
 #so when you only have 1 number in tuple add , after it
 
 ````
+
+**Tuple comprehension**
+
+There are some minor changes w.r.t to list comprehension!!
+
+```py
+T = tuple(iterable) #correct
+```
+
+so suppose you wanted to unpack each element and wanted to do like below:
+
+```py
+T = (iterable) #wrong
+```
+
+so here we'll mention!!
+
+```py
+T = (exp for item in iterable) #wrong
+```
+
+But this wont work in python it will create a generator object! it still needs to be unpacked!! so we have to mentioned * at front!! and as we are making tuple  we have to add the ( _ ) braces as well!! what if there is single element in the iterable, so to handle that we'll have to add , as well!!
+
+```py
+T = ( *(expression for item in iterable), )
+```
+
+
+we can access tuple elements using indexing and as well as slicing works on tuple same as list!!
+
+packing and unpacking also works here!! *can be used to unpack the multiple values for exaple:
+
+```py
+
+t = 1,2,3,4,5
+
+# if you assign multiple values to one varible it will pack it and make a tuple so above expression work
+
+a,b,*c = t
+
+# so here a = 1, b = 2 and c = [3,4,5] so here * will be used to unpack multiple values
+```
+
