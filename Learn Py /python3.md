@@ -251,4 +251,16 @@ t = (1,2,3,4,5,6)
 ```
  It can have duplicates and take any data type!!
 
- 
+````py
+t1 = (1,2,34,4)
+
+t2 = tuple([1,2,3,4,54])
+
+t3= ()
+
+#below is not valid as if we are writing the number we can use braces!!!
+t4 = (3)  #wrong
+t4= (3,) #right
+#so when you only have 1 number in tuple add , after it
+
+````
