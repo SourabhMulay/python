@@ -117,4 +117,16 @@ so above example shows that we can use the -ve indices as well!!
 
 we can also we IN and NOT IN operators to check if string s present in string s1.
 
+dir(str) can list out all the methods related to the string class!!
 
+Methods:
+
+1. find(substring, start, end)
+2. rfind(substring, start, end) : direction changed
+3. index(substring, start, end) : slightly differ (it will hit the error if substring not present)
+4. rindex(substring, start, end)
+5. count(substring, start, end)
+6. ljust(width, fillchar) : string will left justify
+7. rjust(width, fillchar) : string align to right
+8. center(width,fillchar)
+9. zfill(width)
