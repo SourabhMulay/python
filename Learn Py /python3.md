@@ -170,3 +170,51 @@ L[3:3] = [10,12,12]
 
 Giving range will modify/delete the existing elements!  append function can be used to push from back!!
 
+```py
+
+l = [1,2,3,4]
+
+l.extend([1,1,1])
+
+#this can be used to extend the list l
+#if used string inside extend it will split it as an array of characters
+```
+
+to create shallow copy!! use list.copy() function!!
+
+function to remove the elements from list!! 
+
+1. pop()
+2. remove()
+3. clear()
+4. del()
+
+pop(index:optional) so if index not mentioned bydefault it will take last element to be poped.
+
+remove(element:required) so it will remove the specific element from the list
+
+clear() will empty the list totally!
+
+del is similar to pop!! for example if wanted to remove from index 2! 
+
+```py
+del l[2]
+
+#also we can use slicing to delete the range
+
+del l[1:4]
+```
+
+#### Sorting!!
+
+Methods:
+
+1. index(element, start, end)
+2. count(element)
+3. reverse()
+4. sort(*, key=None, reverse=false)
+
+we can mentioned key as argument so w.r.t that it will sort the things out!! 
+
+like if we have list of strings and we wanted to sort it by the length of strings then we mention `l.sort(key=len)`. 
+
