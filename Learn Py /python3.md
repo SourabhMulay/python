@@ -217,4 +217,6 @@ Methods:
 we can mentioned key as argument so w.r.t that it will sort the things out!! 
 
 like if we have list of strings and we wanted to sort it by the length of strings then we mention `l.sort(key=len)`. 
+while sorting strings only with no key it will take the asicii values in consideration!!
+
 
