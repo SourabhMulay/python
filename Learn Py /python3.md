@@ -306,3 +306,33 @@ a,b,*c = t
 # so here a = 1, b = 2 and c = [3,4,5] so here * will be used to unpack multiple values
 ```
 
+<hr>
+
+### Sets
+can be defined as: 
+
+```py
+
+s = {1,2,3}
+
+s = set([1,2,3,4])
+
+s = set('python')
+
+# you cant define set as s={} or empty in curly braces!! there must be least one value
+s4 = {5}
+```
+
+the {} empty braces it think as a dictionary! so there must be least one element to define it as a set!!
+
+the sets are not ordered!! 
+
+you can use the function add to add the items in the set!! you can add the strings, integers, tuple !! so it accept any type of values !!  but  list is now allowed it will give error unhashable type: 'list'!! because the lists are immutable to it cannot be hashed because of change in values!! So set only can have the mutable data types!
+
+remove(element) will remove the specific element!! pop() function will remove the last value but as it do not have indices so you wont have control over which value will be getting deleted!!
+
+**sets Internals**
+
+The technique used to store the element in set is hashing!! Sets use hashing in python! 
+
+
