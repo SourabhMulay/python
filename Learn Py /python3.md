@@ -335,4 +335,11 @@ remove(element) will remove the specific element!! pop() function will remove th
 
 The technique used to store the element in set is hashing!! Sets use hashing in python! 
 
+![image](https://github.com/user-attachments/assets/bee2f138-c14d-4244-a0fe-21dc72490007)
+
+
+Collision is resolved by writing more efficient hash functions!!
+
+and hash table internally chanage its size as per the elements we store in the set!!
+
 
