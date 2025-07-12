@@ -342,4 +342,152 @@ Collision is resolved by writing more efficient hash functions!!
 
 and hash table internally chanage its size as per the elements we store in the set!!
 
+Sets support below mathematical operations:
+
+1. union(iterable)
+2. intersection(iterable)
+3. intersection_update(iterable)  => s1.intersection_update(s2) will update set s1 rather than returning new set.
+4. difference(itr)
+5. difference_update(itr)
+6. symmetric_difference(itr)
+7. symmetric_difference_update(itr)
+
+
+some methods to manipulate the sets:
+
+1. add(ele)
+2. update(itr) => this is same as add but it will add list of elements for example: s1.update((1,2,3)).
+3. copy()
+4. pop()
+5. discard(element) => if you try deleting the element which is not present it will not give you an error.
+6. remove(element)
+7. clear()
+
+<hr>
+
+### Dictionary
+
+```py
+d1 = {}
+```
+
+this is how we can create dict. the way is same as sets but sets require least one element inside the braces!!
+
+```py
+#dict contain the key val pair
+d1 = {1:'one'}
+
+#to get the values
+val = d1[1]
+
+# it will throw the error if key not present
+d1[6] #throws error
+
+#to modify
+d1[1] = 'ein'
+
+#to add new value, if key not present it will create the new one
+d[2] = 'two'
+
+#to traverse the dict
+for i in d1:
+  print(i, d1[i])
+```
+
+in dict as well key can be any type and value as well. but in place of key you cannot put the data type that is unhashable like list!!! so key cannot be a mutable datatype.
+
+methods to create dictionary:
+
+1. iterable Pairs
+
+this method used the iterable pairs to create the dict!! the exaple of iterable pair can be list of tuples.
+
+```py
+d1 = dict( [ (1,'one'), (2, 'two') ] )
+```
+
+2. Zip  function
+
+````py
+# we have here differ lists containing keys and values
+
+keys=[1,2,3,4]
+
+vals=['one','two','three','four']
+
+#zip will take one val from key and one from vals and zip them together : maybe creating tuple
+
+d = dict( zip(key,val) )
+
+````
+
+3. Enumerate function
+
+prepare the list of values and use enumerate! enumerate itself gives the values.
+
+```py
+
+
+l = ['one', 'two']
+
+#here enumerate take start as arg and start will be number 
+d = dict ( enumerate(l , start=1) )
+
+```
+
+
+**Dictionary Comprehension**
+
+```py
+
+#use iterable pairs, zip function , enumerate to create
+
+l = [(1,'one') , (2,'two')]
+
+d1 = {x:y for x,y in l }
+
+#same try for zip and enumerate
+```
+
+**traversing dictionary**
+
+1. keys()
+2. values()
+3. items()
+4. get(key, alt_val) => if key not present then it will return alt_val if any
+5. setdefault(key, alt_val) =>if key present it will retrun value else it create he key with val None or alt_value!!
+
+```py
+
+d1 = { 1:'one' , 2:'two' }
+for x,y in d1.items():
+  print(x,y)
+
+```
+
+other methods:
+
+1. update(dictionary)
+2. fromkeys(sequence, default)
+3. copy()
+4. pop(key, alt_value) => pop if present! (mention the alt_value so code aint break)
+5. popitem()
+6. clear()
+
+```py
+
+d1 = {1:'one'}
+d2 = {2:'two'}
+
+#content of d2 will updated in d1
+d1.update(d2)
+
+l1=[1,2,3,4]
+
+#it will create dictionary with above keys and val None or with given default value
+d1 = dict.fromkeys(l1, defaultval:optional)
+
+```
+
+<hr>
 
