@@ -491,3 +491,95 @@ d1 = dict.fromkeys(l1, defaultval:optional)
 
 <hr>
 
+## collections
+
+### counter
+
+counter will count the element frequency!!
+
+```py
+l = ['mark', 'loise' , 'mark']
+
+from collections import conter
+
+c = Counter(l)
+
+print(c['mark'], c.get('mark'))
+
+#some methods available same as dict
+c.keys()
+c.values()
+c.update({'tom':5})
+
+#when updating element it will keep all elements in sorted order as per there frequencies (highest first)
+
+#below loop will print all elements which presents in the list
+for i in c.elements():
+  print(i)
+
+c.pop('mark')
+
+#this will delete the most occurancing element
+c.popitem()
+
+#most_Comman used value can be get using, it takes argument so to return kth most_common element
+c.most_common(1)
+```
+
+
+### Deque 
+
+you can push from left as well as right!!
+supported  functions:
+1. append
+2. appendleft
+3. count
+4. extendleft
+5. index
+6. insert
+7. pop
+8. popleft
+9. remove
+10. reverse
+11. rotate
+    
+
+```py
+
+from collections import deque
+
+l = [1,2,3,4,5]
+
+q = deque(l)
+
+q.append(6)
+q.appendleft(8)
+
+#extend the elements to right
+q.extend([10,20,30])
+
+# to left
+q.extendleft([12,2,21])
+
+# to rotate by k element
+q.rotate(2)
+
+```
+
+### Array
+
+it only allow single data type
+
+arrayname = array.array(type, [array items])
+
+b -> int
+B -> unsigned int
+i -> signed int
+I -> unsigned int
+l -> signed long
+L -> unsigned Long
+q -> signed long long
+Q -> unsigned long long
+f -> float
+d -> double float
+
