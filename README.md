@@ -642,3 +642,44 @@ heapq.nlargest(2,L)
 heapq.nsmallest(3,lst)
 
 ```
+
+### Bisect
+
+Bisect keep the list always in sorted order!! 
+
+1. insort
+2. insort_left()
+3. insort_right()
+4. bisect()
+5. bisect_left()
+6. bisect_right()
+
+````py
+# insort will insert element in sorted order if element if already there then function insort_left or right can decide where to push
+import bisect
+
+l = [10,20,20,30,40,50,60,70,90]
+
+bisect.insort(l,25)
+bisect.insort_left(l,90)
+
+#bisect function will give you position that where the new element residers
+# so 5 can be inserted at index 0 so it will gives us 0 as returned value
+bisect.bisect(l,5)
+
+bisect.bisect_right(l,20)
+#it will return 1
+
+````
+
+
+### Copy
+
+this is used to duplicate the objects!!
+
+functions:
+
+1. copy.copy(x) => shallow copy
+2. copy.deepcopy(x) => deepcopy
+
+   
