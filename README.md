@@ -682,4 +682,4 @@ functions:
 1. copy.copy(x) => shallow copy
 2. copy.deepcopy(x) => deepcopy
 
-   
+deepcopy can work with both class and functions!!
