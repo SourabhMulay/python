@@ -573,13 +573,72 @@ it only allow single data type
 arrayname = array.array(type, [array items])
 
 b -> int
+
 B -> unsigned int
+
 i -> signed int
+
 I -> unsigned int
+
 l -> signed long
+
 L -> unsigned Long
+
 q -> signed long long
+
 Q -> unsigned long long
+
 f -> float
+
 d -> double float
 
+````py
+import array
+
+a1 = array.array('i', [10,20,30,40])
+
+# this byte type string so the array will contains the ascii codes
+s = b'abcdef'
+a2 = array.array('b', s)
+
+
+````
+
+### Heapq
+
+function supported:
+
+1. heapify
+2. heappush
+3. heappop
+4. heapreeplace
+5. nlargest
+6. nsmallest
+
+```py
+
+import heappq
+
+h = []
+
+heapq.heappush(h,20)
+heappq.heappush(h,40)
+heapq.heappush(h,10)
+
+print(h)
+
+# it will take the first element
+heapq.heappop(h)
+
+lst = [50,30,60,40,70,20,10]
+
+#this is not a heap so you will have to heapify inorder to create the heap
+heapq.heapify(lst)
+
+#nlargest will give us the nth largest elements
+heapq.nlargest(2,L)
+
+#nsmallest
+heapq.nsmallest(3,lst)
+
+```
