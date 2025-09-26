@@ -683,3 +683,7 @@ functions:
 2. copy.deepcopy(x) => deepcopy
 
 deepcopy can work with both class and functions!!
+
+<hr>
+
+## Object Oriented Programming in Python
